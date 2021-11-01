@@ -1,7 +1,8 @@
-﻿using Business.Concrete;
+﻿using Businesss.Concrete;
 using Data.Concrete.EntityFramwrok;
 using Entities.Concrete;
 using System;
+using System.Linq;
 
 namespace ConsoleUI
 {
@@ -20,13 +21,18 @@ namespace ConsoleUI
                 BrandId = 5,
                 ModelYear = 2018
             };
-            carManager.Add(car2);
 
-           
+
+
+
+
+
             foreach (var item in carManager.GetCarsByBrandId(1))
             {
                 Console.WriteLine(item.Description);
             }
         }
+        
+        
     }
 }

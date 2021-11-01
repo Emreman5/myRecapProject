@@ -5742,9 +5742,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Businesss.csproj",
-      "projectName": "Businesss",
-      "projectPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Businesss.csproj",
+      "projectUniqueName": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Business.csproj",
+      "projectName": "Business",
+      "projectPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Business.csproj",
       "packagesPath": "C:\\Users\\emre1\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\obj\\",
       "projectStyle": "PackageReference",

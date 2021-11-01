@@ -1483,17 +1483,17 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Businesss/1.0.0": {
+      "Business/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Data": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Businesss.dll": {}
+          "bin/placeholder/Business.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Businesss.dll": {}
+          "bin/placeholder/Business.dll": {}
         }
       },
       "Data/1.0.0": {
@@ -5732,10 +5732,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Businesss/1.0.0": {
+    "Business/1.0.0": {
       "type": "project",
-      "path": "../Businesss/Businesss.csproj",
-      "msbuildProject": "../Businesss/Businesss.csproj"
+      "path": "../Businesss/Business.csproj",
+      "msbuildProject": "../Businesss/Business.csproj"
     },
     "Data/1.0.0": {
       "type": "project",
@@ -5750,7 +5750,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Businesss >= 1.0.0"
+      "Business >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5785,8 +5785,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Businesss.csproj": {
-              "projectPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Businesss.csproj"
+            "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Business.csproj": {
+              "projectPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\Business.csproj"
             }
           }
         }
