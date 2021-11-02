@@ -1,6 +1,7 @@
 ﻿using Businesss.Abstract;
 using Entities.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -54,6 +55,21 @@ namespace Businesss.Concrete
         {
             _carDal.Update(entity);
 
+        }
+
+        public Car GetById(Expression<Func<Car, bool>> filter)
+        {
+            return _carDal.GetById(filter);
+        }
+
+        public Car Get(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter=null)
+        {
+            return _carDal.GetCarDetail(filter);
         }
     }
 }

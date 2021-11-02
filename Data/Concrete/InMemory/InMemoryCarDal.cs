@@ -1,5 +1,6 @@
 ﻿using Entities.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,9 +26,29 @@ namespace Data.Concrete.InMemory
             _cars.RemoveAt(index);
         }
 
+        public Car Get(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Car Get(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
         {
             return _cars;
+        }
+
+        public Car GetById(Expression<Func<Car, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter)
+        {
+            throw new NotImplementedException();
         }
 
         public void Update(Car entity)

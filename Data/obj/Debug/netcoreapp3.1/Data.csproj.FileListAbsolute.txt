@@ -10,4 +10,5 @@ C:\Users\emre1\source\repos\myRecapProject\Data\obj\Debug\netcoreapp3.1\Data.Ass
 C:\Users\emre1\source\repos\myRecapProject\Data\obj\Debug\netcoreapp3.1\Data.csproj.CoreCompileInputs.cache
 C:\Users\emre1\source\repos\myRecapProject\Data\obj\Debug\netcoreapp3.1\Data.dll
 C:\Users\emre1\source\repos\myRecapProject\Data\obj\Debug\netcoreapp3.1\Data.pdb
-C:\Users\emre1\source\repos\myRecapProject\Data\obj\Debug\netcoreapp3.1\Data.csproj.CopyComplete
+C:\Users\emre1\source\repos\myRecapProject\Data\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\emre1\source\repos\myRecapProject\Data\bin\Debug\netcoreapp3.1\Core.pdb

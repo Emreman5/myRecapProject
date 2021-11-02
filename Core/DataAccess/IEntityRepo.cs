@@ -1,10 +1,11 @@
-﻿using Entities.Abstract;
+﻿
+using Core.Entites;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Data.Abstract
+namespace Core.DataAccess
 {
    public interface IEntityRepo<T> where T:class,IEntity,new()
     {
@@ -12,6 +13,7 @@ namespace Data.Abstract
         void Delete(T entity);
         void Update(T entity);
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
+        T GetById(Expression<Func<T, bool>> filter = null);
 
     }
 }
