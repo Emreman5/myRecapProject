@@ -1,4 +1,7 @@
-﻿using Businesss.Abstract;
+﻿using Business.Constants;
+using Businesss.Abstract;
+using Core.Utilities;
+using Core.Utilties.Results;
 using Entities.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -18,58 +21,58 @@ namespace Businesss.Concrete
             _carDal = carDal;
         }
 
-        public void Add(Car entity)
+        public IResult Add(Car entity)
         {
             if (entity.DailyPrice>=0&&entity.Description.Length>=2)
             {
                 _carDal.Add(entity);
+                return new SucccessResult(Messages.carAdded);
             }
             else
             {
-                Console.WriteLine("Arabanın fiyatı 0 dan küçük ve açıklaması minimum 2 harften oluşmalı");
+                return new ErrorResult();
             }
             
         }
 
-        public void Delete(Car entity)
+        public IResult Delete(Car entity)
         {
             _carDal.Delete(entity);
+            return new SucccessResult(Messages.carDeleted);
         }
 
-        public List<Car> GetAll()
+        public IDataResult<List<Car>> GetAll()
         {
-           return  _carDal.GetAll();
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.carListed);
         }
 
-        public List<Car> GetCarsByColorId(int colorid)
+        public IDataResult<List<Car>> GetCarsByColorId(int colorid)
         {
-            return _carDal.GetAll(x => x.ColorId == colorid);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x=>x.ColorId==colorid),Messages.carListed);
         }
 
-        public List<Car> GetCarsByBrandId(int brandId)
+        public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
         {
-            return _carDal.GetAll(x => x.BrandId == brandId);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x => x.BrandId == brandId),Messages.carListed);
         }
 
-        public void Update(Car entity)
+        public IResult Update(Car entity)
         {
             _carDal.Update(entity);
+            return new SucccessResult(Messages.carUpdated);
 
         }
 
-        public Car GetById(Expression<Func<Car, bool>> filter)
+        public IDataResult<Car> GetById(Expression<Func<Car, bool>> filter)
         {
-            return _carDal.GetById(filter);
+            return new SuccessDataResult<Car>(_carDal.GetById(filter));
         }
 
-        public Car Get(Expression<Func<Car, bool>> filter)
-        {
-            throw new NotImplementedException();
-        }
+        
 
-        public List<CarDetailDto> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter=null)
+        public IDataResult<List<CarDetailDto>> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter=null)
         {
-            return _carDal.GetCarDetail(filter);
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetail(filter),Messages.carListed);
         }
     }
 }
