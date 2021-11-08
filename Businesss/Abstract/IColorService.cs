@@ -1,4 +1,5 @@
-﻿using Core.Utilities;
+﻿using Business.Abstract;
+using Core.Utilities;
 using Core.Utilties.Results;
 using Entities.Concrete;
 using System;
@@ -8,13 +9,10 @@ using System.Text;
 
 namespace Businesss.Abstract
 {
-    public interface IColorService
+    public interface IColorService:IServiceRepository<Color>
     {
-        IDataResult<List<Color>> GetAll();
+       
         IDataResult<Color> GetColorById(int id);
-        IResult Add(Color entity);
-        IResult Delete(Color entity);
-        IResult Update(Color entity);
 
     }
 }

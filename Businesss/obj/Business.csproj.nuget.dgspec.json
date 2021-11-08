@@ -14,7 +14,7 @@
         "outputPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Businesss\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
           "C:\\Users\\emre1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,7 +76,7 @@
         "outputPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
           "C:\\Users\\emre1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -140,7 +140,7 @@
         "outputPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
           "C:\\Users\\emre1\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -211,7 +211,7 @@
         "outputPath": "C:\\Users\\emre1\\source\\repos\\myRecapProject\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
         ],
         "configFilePaths": [
           "C:\\Users\\emre1\\AppData\\Roaming\\NuGet\\NuGet.Config",
