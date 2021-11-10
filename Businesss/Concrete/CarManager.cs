@@ -1,16 +1,15 @@
-﻿using Business.Constants;
-using Businesss.Abstract;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
+using Business.Abstract;
+using Business.Constants;
 using Core.Utilities;
-using Core.Utilties.Results;
+using Core.Utilities.Results;
 using Entities.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
 
-
-namespace Businesss.Concrete
+namespace Business.Concrete
 {
     public class CarManager : ICarService
     {
@@ -26,7 +25,7 @@ namespace Businesss.Concrete
             if (entity.DailyPrice>=0&&entity.Description.Length>=2)
             {
                 _carDal.Add(entity);
-                return new SucccessResult(Messages.carAdded);
+                return new SucccessResult(Messages.CarAdded);
             }
             else
             {
@@ -38,28 +37,28 @@ namespace Businesss.Concrete
         public IResult Delete(Car entity)
         {
             _carDal.Delete(entity);
-            return new SucccessResult(Messages.carDeleted);
+            return new SucccessResult(Messages.CarDeleted);
         }
 
         public IDataResult<List<Car>> GetAll()
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.carListed);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarListed);
         }
 
         public IDataResult<List<Car>> GetCarsByColorId(int colorid)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x=>x.ColorId==colorid),Messages.carListed);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x=>x.ColorId==colorid),Messages.CarListed);
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x => x.BrandId == brandId),Messages.carListed);
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll(x => x.BrandId == brandId),Messages.CarListed);
         }
 
         public IResult Update(Car entity)
         {
             _carDal.Update(entity);
-            return new SucccessResult(Messages.carUpdated);
+            return new SucccessResult(Messages.CarUpdated);
 
         }
 
@@ -72,7 +71,7 @@ namespace Businesss.Concrete
 
         public IDataResult<List<CarDetailDto>> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter=null)
         {
-            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetail(filter),Messages.carListed);
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetail(filter),Messages.CarListed);
         }
 
         public IDataResult<Car> GetById(int id)

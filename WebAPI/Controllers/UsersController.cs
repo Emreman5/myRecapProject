@@ -17,19 +17,19 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             var result = _userService.GetAll();
-            if (result.isSuccess)
+            if (result.IsSuccess)
             {
                 return Ok(result);
             }
 
-            return BadRequest(result.message);
+            return BadRequest(result.Message);
         }
 
         [HttpGet("getbyid")]
         public IActionResult GetById(int id)
         {
             var result = _userService.GetById(id);
-            if (result.isSuccess)
+            if (result.IsSuccess)
             {
                 return Ok(result);
             }
@@ -41,12 +41,12 @@ namespace WebAPI.Controllers
         public IActionResult Add(User user)
         {
             var result = _userService.Add(user);
-            if (result.isSuccess)
+            if (result.IsSuccess)
             {
-                return Ok(result.message);
+                return Ok(result.Message);
             }
 
-            return BadRequest(result.message);
+            return BadRequest(result.Message);
         }
         
     }

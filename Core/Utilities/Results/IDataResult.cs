@@ -1,9 +1,4 @@
-﻿using Core.Utilties.Results;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Utilities
+﻿namespace Core.Utilities.Results
 {
     public interface IDataResult<T>:IResult
     {

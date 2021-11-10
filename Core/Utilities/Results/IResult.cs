@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Utilties.Results
+﻿namespace Core.Utilities.Results
 {
     public interface IResult
     {
-        bool isSuccess { get; }
-        string message { get; }
+        bool IsSuccess { get; }
+        string Message { get; }
 
     }
 }

@@ -1,9 +1,7 @@
-﻿
-using Core.Entites;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
+using Core.Entities;
 
 namespace Core.DataAccess
 {
@@ -14,6 +12,6 @@ namespace Core.DataAccess
         void Update(T entity);
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
         T GetById(Expression<Func<T, bool>> filter);
-
+        
     }
 }

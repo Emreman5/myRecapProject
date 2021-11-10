@@ -1,14 +1,11 @@
-﻿using Businesss.Abstract;
+﻿using System.Collections.Generic;
+using Business.Abstract;
 using Core.Utilities;
-using Core.Utilties.Results;
+using Core.Utilities.Results;
 using Data.Abstract;
 using Entities.Concrete;
-using System;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using System.Text;
 
-namespace Businesss.Concrete
+namespace Business.Concrete
 {
     public class BrandManager : IBrandService
     {

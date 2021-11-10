@@ -1,10 +1,9 @@
-﻿using Core.Entites;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
+using Core.Entities;
 
 namespace Core.DataAccess.EntityFramework
 {
@@ -49,6 +48,8 @@ namespace Core.DataAccess.EntityFramework
                 return context.Set<TEntity>().SingleOrDefault(filter);
             }
         }
+
+   
 
         public void Update(TEntity entity)
         {

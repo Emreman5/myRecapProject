@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Utilties.Results
+﻿namespace Core.Utilities.Results
 {
     public class SucccessResult:Result
     {

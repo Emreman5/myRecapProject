@@ -1,22 +1,21 @@
 ﻿using Business.Concrete;
-using Businesss.Concrete;
 using Data.Concrete.EntityFramwrok;
 using Entities.Concrete;
 using System;
-using System.Linq;
+using Data.Concrete.EntityFramewrok;
 
 namespace ConsoleUI
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            CarManager carManager = new CarManager(new EFCarDal());
-            ColorManager colorManager = new ColorManager(new EFColorDal());
-            BrandManager brandManager = new BrandManager(new EFBrandDal());
-            CustomerManager customerManager = new CustomerManager(new EFCustomerDal());
-            RentalManager rentalManager = new RentalManager(new EFRentalDal());
-            Rental rental = new Rental()
+            var carManager = new CarManager(new EfCarDal());
+            var colorManager = new ColorManager(new EfColorDal());
+            var brandManager = new BrandManager(new EfBrandDal());
+            var customerManager = new CustomerManager(new EFCustomerDal());
+            var rentalManager = new RentalManager(new EfRentalDal());
+            var rental = new Rental()
             {
                 CarId = 1,
                 CustomerId = 2,
@@ -25,7 +24,7 @@ namespace ConsoleUI
                 ReturnDate = new DateTime(2021, 11, 30)
             };
             var result =rentalManager.Add(rental);
-            Console.WriteLine(result.isSuccess);
+            Console.WriteLine(result.IsSuccess);
          
 
 

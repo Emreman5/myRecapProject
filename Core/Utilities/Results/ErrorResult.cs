@@ -1,9 +1,4 @@
-﻿using Core.Utilties.Results;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Core.Utilties.Results
+﻿namespace Core.Utilities.Results
 {
     public class ErrorResult:Result
     {

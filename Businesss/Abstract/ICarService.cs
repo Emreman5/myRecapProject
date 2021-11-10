@@ -1,14 +1,12 @@
-﻿using Business.Abstract;
-using Core.Utilities;
-using Core.Utilties.Results;
-using Entities.Concrete;
-using Entities.DTOs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
+using Core.Utilities;
+using Core.Utilities.Results;
+using Entities.Concrete;
+using Entities.DTOs;
 
-namespace Businesss.Abstract
+namespace Business.Abstract
 {
     public interface ICarService:IServiceRepository<Car>
     {
