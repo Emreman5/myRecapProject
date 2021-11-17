@@ -69,3 +69,7 @@ C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Bus
 C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.dll
 C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Core.pdb
 C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\obj\Debug\netcoreapp3.1\ConsoleUI.csproj.CopyComplete
+C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.dll
+C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Autofac.Extras.DynamicProxy.dll
+C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\emre1\source\repos\myRecapProject\ConsoleUI\bin\Debug\netcoreapp3.1\FluentValidation.dll

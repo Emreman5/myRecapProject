@@ -1,11 +1,11 @@
-﻿using Entities.Abstract;
-using Entities.Concrete;
+﻿using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
+using Data.Abstract;
 
 namespace Data.Concrete.InMemory
 {
@@ -46,7 +46,12 @@ namespace Data.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-        public List<CarDetailDto> GetCarDetail(Expression<Func<CarDetailDto, bool>> filter)
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CarDetailDto GetCarDetailById(int id)
         {
             throw new NotImplementedException();
         }

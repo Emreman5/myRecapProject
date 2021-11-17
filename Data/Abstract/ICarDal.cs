@@ -1,16 +1,16 @@
-﻿using Core.DataAccess;
-using Data.Abstract;
-using Entities.Concrete;
-using Entities.DTOs;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
-using System.Text;
+using Core.DataAccess;
+using Entities.Concrete;
+using Entities.DTOs;
 
-namespace Entities.Abstract
+namespace Data.Abstract
 {
     public interface ICarDal:IEntityRepo<Car>
     {
-        List<CarDetailDto> GetCarDetail(Expression<Func<CarDetailDto,bool>> filter);
+        List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto,bool>> filter);
+        CarDetailDto GetCarDetailById(int id);
+     
     }
 }

@@ -2,6 +2,7 @@
 using Data.Concrete.EntityFramwrok;
 using Entities.Concrete;
 using System;
+using Data.Concrete.EntityFramework;
 using Data.Concrete.EntityFramewrok;
 
 namespace ConsoleUI

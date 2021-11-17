@@ -40,6 +40,7 @@ namespace Core.DataAccess.EntityFramework
                     context.Set<TEntity>().Where(filter).ToList();
             }
         }
+        
 
         public TEntity GetById(Expression<Func<TEntity,bool>> filter)
         {
