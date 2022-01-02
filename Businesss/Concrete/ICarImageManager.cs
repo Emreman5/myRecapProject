@@ -4,6 +4,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using Business.Abstract;
 using Business.Constants;
+using Business.Constants.PathConstants;
 using Core.Utilities;
 using Core.Utilities.Business;
 using Core.Utilities.Helpers.FileHelper;
@@ -69,11 +70,7 @@ namespace Business.Concrete
 
             return new SuccessDataResult<List<CarImage>>(_carImageDal.GetAll(x => x.CarId == id));
         }
-
-        public IResult Add(IFormFile file, CarImage image)
-        {
-            throw new NotImplementedException();
-        }
+        
 
         private IResult IsImageCapacityExceed(CarImage entity)
         {
