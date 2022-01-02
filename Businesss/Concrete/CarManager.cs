@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Business.Constants;
 using Business.FluentValidation.ValidationRules;
 using Core.Aspects.Autofac.Validation;
@@ -19,9 +20,6 @@ namespace Business.Concrete
     public class CarManager : ICarService
     {
         ICarDal _carDal;
-
-
-
         public CarManager(ICarDal carDal)
         {
             _carDal = carDal;
@@ -30,6 +28,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
+       [SecuredOperation("admin")]
         public IResult Add(Car entity)
         {
             if (entity.DailyPrice >= 0 && entity.Description.Length >= 2)

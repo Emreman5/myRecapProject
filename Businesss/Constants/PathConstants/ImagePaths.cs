@@ -1,4 +1,4 @@
-﻿namespace Business.Constants
+﻿namespace Business.Constants.PathConstants
 {
     public static class PathConstant
     {

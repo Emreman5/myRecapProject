@@ -4,7 +4,6 @@
     {
         public SucccessResult(string message):base(true,message)
         {
-
         }
         public SucccessResult():base(true)
         {

@@ -12,6 +12,7 @@ namespace Core.DataAccess
         void Update(T entity);
         List<T> GetAll(Expression<Func<T,bool>> filter=null);
         T GetById(Expression<Func<T, bool>> filter);
-        
+        T Get(Expression<Func<T, bool>> filter);
+
     }
 }
